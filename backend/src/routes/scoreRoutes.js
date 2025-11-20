@@ -5,7 +5,7 @@ import { calculateScore } from '../utils/calculateScore.js';
 
 const router = express.Router();
 
-// 2) POST /add-score
+
 router.post('/add-score', async (req, res) => {
   try {
     const { user_id, Basic_verification, Background_check, Experience, Positive_behavior } =
@@ -59,7 +59,7 @@ router.post('/add-score', async (req, res) => {
   }
 });
 
-// 3) GET /score/:user_id
+
 router.get('/score/:user_id', async (req, res) => {
   try {
     const { user_id } = req.params;

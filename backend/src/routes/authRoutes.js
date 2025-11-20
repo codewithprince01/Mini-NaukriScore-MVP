@@ -4,7 +4,7 @@ import User from '../models/User.js';
 
 const router = express.Router();
 
-// 1) POST /register
+
 router.post('/register', async (req, res) => {
   try {
     const { Name, Email, Password } = req.body;
@@ -38,7 +38,7 @@ router.post('/register', async (req, res) => {
   }
 });
 
-// 2) POST /login
+
 router.post('/login', async (req, res) => {
   try {
     const { Email, Password } = req.body;
@@ -69,7 +69,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// 3) POST /logout (stateless placeholder)
+
 router.post('/logout', (req, res) => {
   return res.json({ message: 'Logged out successfully' });
 });
